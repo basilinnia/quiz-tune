@@ -1,7 +1,11 @@
 @import "tailwindcss";
+@plugin "flowbite-react/plugin/tailwindcss";
+@source "../../.flowbite-react/class-list.json";
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 
 @font-face {
     font-family: 'jua-sans';
@@ -37,6 +41,11 @@
 
 .options {
     font-family: 'mplus-bold', "mplus-bold", serif;
+}
+
+.mymodal {
+    background-color: aquamarine;
+    color: aquamarine;
 }
 
 :root {

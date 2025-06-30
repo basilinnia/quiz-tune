@@ -1,4 +1,8 @@
 import Navbar from "../components/Navbar";
+import {EnterRoom} from "@/components/EnterRoom";
+import CreateRoom from "@/components/CreateRoom";
+
+
 
 export default function Home() {
   return (
@@ -35,23 +39,8 @@ export default function Home() {
               </div>
 
               <div className="flex flex-row justify-around">
-                  <button
-                      className="px-8 py-4 w-2/5 bg-blue-800 rounded-xl drop-shadow-xl/80 shadow-xl
-             text-white text-[1.5rem] text-center
-             transform active:translate-y-1 active:bg-blue-900 active:shadow-inner
-             transition-all duration-100"
-                  >
-                      enter a room
-                  </button>
-                  <button
-                      className="px-8 py-4 w-2/5 bg-blue-800 rounded-xl drop-shadow-xl/80 shadow-xl
-             text-white text-[1.5rem] text-center
-             transform active:translate-y-1 active:bg-blue-900 active:shadow-inner
-             transition-all duration-100"
-                  >
-                      create a new game
-                  </button>
-
+                  <EnterRoom/>
+                  <CreateRoom/>
               </div>
           </div>
       </div>
