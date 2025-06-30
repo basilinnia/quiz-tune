@@ -7,3 +7,4 @@
 - [ ] 🎵 Add Spotify integration
 - [ ] 🙋‍♂️ Add user information
 - [ ] 🔌 Add socket connection for multiplayer gaming
+- [ ] Use rough annotations/add some aesthetics
