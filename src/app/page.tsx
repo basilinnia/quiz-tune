@@ -6,7 +6,7 @@ import CreateRoom from "@/components/CreateRoom";
 
 export default function Home() {
   return (
-      <div className="bg-[url(../../public/grid_back.png)] h-screen flex flex-col w-full">
+      <div className="bg-[url(../../public/grid_back.png)] h-screen flex flex-col bg-cover bg-center w-full">
           <Navbar/>
           <h1 className="btext text-[2.5rem] tracking-2 font-bold text-emerald-400 w-full text-center mb-2">
               How Well Do You Really Know Your Tunes?

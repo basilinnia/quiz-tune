@@ -61,7 +61,7 @@ export default function CreateRoom() {
                                 placeholder="Enter a playlist link"
                             />
                             <Select>
-                                <option disabled selected>Choose game mode</option>
+                                <option disabled>Choose game mode</option>
                                 <option value="1">Multiplayer</option>
                                 <option value="2">Single player</option>
                             </Select>
