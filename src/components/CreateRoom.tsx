@@ -1,7 +1,8 @@
 "use client";
-import {Button, Carousel, Modal, ModalBody, ModalHeader, Select, TextInput} from "flowbite-react";
+import {Button, Modal, ModalBody, ModalHeader, Select, TextInput} from "flowbite-react";
 import {useState} from "react";
 import PlaylistCarousel from "@/components/PlaylistCarousel";
+import Checkboxes from "@/components/Checkboxes";
 
 const playlists = [
     {
@@ -45,27 +46,29 @@ export default function CreateRoom() {
             >
                 <ModalHeader/>
                 <ModalBody>
-                    <div className="space-y-6">
+                    <div className="space-y-4 ">
                         <div className="text-center mb-4">
-                            <h3 className="text-xl font-semibold text-gray-900 dark:text-white">
+                            <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
                                 You can choose one of our playlists!
                             </h3>
                         </div>
                         <PlaylistCarousel playlists={playlists}/>
                         <div className="flex flex-col gap-4">
+                            <Checkboxes/>
                             <TextInput
                                 id="playlist-link"
                                 type="url"
                                 placeholder="Enter a playlist link"
                             />
                             <Select>
-                                <option disabled defaultValue>Choose game mode</option>
+                                <option disabled selected>Choose game mode</option>
                                 <option value="1">Multiplayer</option>
                                 <option value="2">Single player</option>
                             </Select>
+
                         </div>
                         <Button
-                            className="my-4 w-full font-bold"
+                            className="mt-4 w-full font-bold"
                             color="pink"
                             type="button"
                         >CREATE GAME </Button>
