@@ -3,7 +3,7 @@ import {Button, createTheme, ThemeProvider} from "flowbite-react";
 const customTheme = createTheme({
   button: {
     color: {
-      primary: "bg-[#ffea00] hover:bg-[#ffea00]",
+      primary: "bg-[#ffea00] hover:bg-[#ffea00] focus:bg-gray-300",
       secondary: "bg-blue-500 hover:bg-blue-600",
     }
   },
@@ -17,7 +17,7 @@ export default function Options({options}: { options: string[] }) {
                     {options.map((option) => {
                             return (
                                 <Button
-                                    className="stext h-16 rounded-lg shadow-lg hover:bg-[#9c7d0c] transition-colors drop-shadow-xl/90 text-lg text-black font-bold"
+                                    className="stext h-16 rounded-lg shadow-lg hover:bg-[#9c7d0c] focus:bg-gray-300 transition-colors drop-shadow-xl/90 text-lg text-black font-bold"
                                     key={option}
                                     color="primary"
                                 >
